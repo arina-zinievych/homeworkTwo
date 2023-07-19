@@ -1,0 +1,28 @@
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="text-center text-success">
+            <p class="p-2 fs-4 fw-bold border border-2 border-success">{{ title | uppercase }}</p>
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="d-flex justify-content-between mb-2">
+            <h5>{{firstPlaceName}}</h5>
+            <h5>{{firstPlaceDate}}</h5>
+        </div>
+        <ul class="mb-2">
+            <li *ngFor="let duties of firstPlace">
+                {{duties}}
+            </li>
+        </ul>
+
+        <div class="d-flex justify-content-between mb-2">
+            <h5>{{secondPlaceName}}</h5>
+            <h5>{{secondPlaceDate}}</h5>
+        </div>
+        <ul>
+            <li *ngFor="let duties of secondPlace">
+                {{duties}}
+            </li>
+        </ul>
+    </div>
+</div>

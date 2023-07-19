@@ -1,0 +1,41 @@
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="text-center text-success">
+            <p class="p-2 fs-4 fw-bold border border-2 border-success">{{ educationTitle | uppercase }}</p>
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="d-flex justify-content-between mb-2">
+            <h5>{{universityName}}</h5>
+            <h5>{{educationDate}}</h5>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="text-center text-success">
+            <p class="p-2 fs-4 fw-bold border border-2 border-success">{{ skillsTitle | uppercase }}</p>
+        </div>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li *ngFor="let skill of skillsList">
+                {{skill}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-3">
+        <div class="text-center text-success">
+            <p class="p-2 fs-4 fw-bold border border-2 border-success">{{ certificationsTitle | uppercase }}</p>
+        </div>
+    </div>
+    <div class="col-9">
+        <ul>
+            <li *ngFor="let certificat of certificationsList">
+                {{certificat}}
+            </li>
+        </ul>
+    </div>
+</div>
